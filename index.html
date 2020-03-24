@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Document</title>
+
+</head>
+<body>
+    <script src="node_modules\howler\dist\howler.js"></script>
+    <script>
+        var btn1 = new Howl({
+        src: ['btn1.wav']
+        });
+
+        var btn2 = new Howl({
+        src: ['btn2.wav']
+        });
+
+        var song = new Howl({
+        src: ['song.mp3'],
+        volume: 0.3
+        });
+
+        song.play();
+
+
+    </script>
+
+
+    <header>
+        <div id="audio-control">
+            <img src="img/play.png" alt="tocar-audio" id="audio-play" class="audio-btn">
+            <img src="img/stop.png" alt="tocar-audio" id="audio-stop" class="audio-btn">
+        </div>
+    </header>
+    <section>
+        <h1 id="title"><span id="logo">Donais</span> Casino</h1>
+        <div id="options">
+            <div class="option" id="sorte1">
+                <h1>Sorte 1</h1>
+                <p>Custo: 10g</p>
+                <p>5% de Chance de ganhar 250g</p>
+                <img src="https://365psd.com/images/previews/1f1/treasure-chest-52083.png" alt="Baú-da-sorte">
+            </div>
+    
+            <div class="option" id="sorte2">
+                <h1>Sorte 2</h1>
+                <p>Custom: 10g</p>
+                <p>50% de Chance de ganhar 25g</p>
+                <img src="https://365psd.com/images/previews/1f1/treasure-chest-52083.png" alt="Baú-da-sorte">
+            </div>
+        </div>
+    </section>
+</body>
+
+<script src="js/main.js"></script>
+</html>
